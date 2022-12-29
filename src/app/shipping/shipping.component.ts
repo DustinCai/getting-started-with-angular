@@ -8,6 +8,8 @@ import { CartService } from '../cart.service';
   styleUrls: ['./shipping.component.css'],
 })
 export class ShippingComponent implements OnInit {
+  // used to render data from shipping
+
   shippingCosts!: Observable<{ type: string; price: number }[]>;
 
   constructor(private cartService: CartService) {}

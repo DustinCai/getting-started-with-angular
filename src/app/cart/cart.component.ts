@@ -7,6 +7,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
+  // for managing data
   items = this.cartService.getItems(); // sets the items using the CartService
 
   constructor(private cartService: CartService) {}
