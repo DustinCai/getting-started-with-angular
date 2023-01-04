@@ -7,6 +7,6 @@ import { Product } from '../products';
   styleUrls: ['./product-alerts.component.css'],
 })
 export class ProductAlertsComponent {
-  @Input() product!: Product | undefined;
+  @Input() product!: Product | undefined; // property val passes in from the component's parent
   @Output() notify = new EventEmitter(); // allows comp to emit event when val of notify changes
 }
